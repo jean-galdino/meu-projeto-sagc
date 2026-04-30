@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sistema de Execução SAGC</title>
+    <title>Portal SAGC — PCDF</title>
+    <meta charset="UTF-8">
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-        iframe { width: 100%; height: 100%; border: none; }
+        body, html { margin: 0; padding: 0; height: 100%; background: #0a1628; 
+                     display: flex; align-items: center; justify-content: center;
+                     font-family: 'Segoe UI', sans-serif; color: #fff; }
+        .box { text-align: center; }
+        .logo { font-size: 2rem; font-weight: 700; color: #4fc3f7; letter-spacing: 4px; }
+        .sub { font-size: .85rem; color: #90a4ae; margin-top: 6px; }
+        .spinner { width: 36px; height: 36px; border: 3px solid rgba(79,195,247,.2);
+                   border-top-color: #4fc3f7; border-radius: 50%;
+                   animation: spin .8s linear infinite; margin: 20px auto; }
+        @keyframes spin { to { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbxn9jr-mZ9Vq7yMAoj8uRenqHDPfhKHhCfhiLwSHNcDfB1qjJu-aprMASaL5KgK1IvC7w/exec"></iframe>
+    <div class="box">
+        <div class="logo">SAGC</div>
+        <div class="sub">Polícia Civil do Distrito Federal</div>
+        <div class="spinner"></div>
+        <p style="font-size:.8rem;color:#78909c">Redirecionando...</p>
+    </div>
+    <script>
+        window.location.replace('https://script.google.com/macros/s/AKfycbxn9jr-mZ9Vq7yMAoj8uRenqHDPfhKHhCfhiLwSHNcDfB1qjJu-aprMASaL5KgK1IvC7w/exec');
+    </script>
 </body>
 </html>
